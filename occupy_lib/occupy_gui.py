@@ -2561,7 +2561,7 @@ class Ui_MainWindow(object):
             import glob
             app_dirs=glob.glob("/Applications/*app")
             for dir in app_dirs:
-                self.find_chimerax(f'{dir}/chimerax')
+                self.find_chimerax(f'{dir}/Contents/bin/ChimeraX')
 
         occupy_chimx_var = 'OCCUPY_CHIMERAX'
         if os.environ.get(occupy_chimx_var) != None:
